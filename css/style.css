@@ -68,6 +68,62 @@ button:focus {
     margin: 2rem 0;
 }
 
+.animationBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* @media screen and (max-width : 1200px) {
+    .animationBox {
+        flex-direction: column;
+    }
+
+    .animationText h2 {
+        text-align: center !important;
+    }
+} */
+
+.animationBox h2 {
+
+
+    text-align: center;
+    flex-basis: 70%;
+}
+
+.animationText {
+
+    width: 30%;
+    flex-basis: 30%;
+    line-height: 1.5rem;
+
+}
+
+.animationText h2 {
+    text-align: center !important;
+    color: var(--primaryOrange);
+
+    padding-left: 0.5rem;
+    font-weight: 600 !important;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (min-width : 1200px) {
+    .animationText h2 {
+        text-align: left !important;
+    }
+
+    .animationBox h2 {
+        text-align: right;
+    }
+
+    .animationBox {
+        flex-direction: row;
+    }
+}
+
 .prom h1 {
     text-transform: capitalize;
     letter-spacing: 1.5px;
@@ -99,15 +155,12 @@ button:focus {
     font-size: 1.3rem;
     letter-spacing: 1.1px;
     line-height: 1.5rem;
-    width: 100%;
+    /* width: 100%; */
     font-weight: 300;
     font-family: var(--primaryFont);
 }
 
-.text h2 {
-    font-weight: 600 !important;
-    letter-spacing: 1.5px;
-}
+
 
 
 .fa-circle {
@@ -122,11 +175,6 @@ button:focus {
     color: var(--primaryOrange);
 }
 
-.text {
-    color: var(--primaryOrange);
-
-    font-size: 1rem;
-}
 
 button {
     cursor: pointer;
