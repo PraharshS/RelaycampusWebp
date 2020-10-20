@@ -71,7 +71,7 @@ button:focus {
 .animationBox {
     display: flex;
     flex-direction: column;
-    justify-content: space-around !important;
+    justify-content: center !important;
     align-items: center;
     margin-bottom: 1rem;
 }
@@ -86,17 +86,18 @@ button:focus {
     }
 } */
 
-.animationBox h2 {
+.animationHeading {
 
-
+    /* width: auto; */
     text-align: center;
     flex-basis: 70%;
+
 }
 
 .animationText {
 
-    width: 80%;
-    flex-basis: 30%;
+    width: auto;
+    flex-basis: 60%;
     line-height: 1.5rem;
 
 }
@@ -111,20 +112,32 @@ button:focus {
 }
 
 @media screen and (min-width : 1200px) {
-    .animationText h2 {
-        text-align: left !important;
+    .animationBox {
+        flex-direction: row;
+    }
+
+    .animationHeading {
+        min-width: auto;
+        width: auto;
+        flex-basis: 45%;
+        margin-left: auto;
+        text-align: right !important;
+        padding-right: 0.5rem;
     }
 
     .animationText {
-        width: 30%;
+
+        width: 25%;
+        margin-right: auto;
+        flex-basis: 25%;
+        line-height: 1.5rem;
+
+
     }
 
-    .animationBox h2 {
-        text-align: right;
-    }
-
-    .animationBox {
-        flex-direction: row;
+    .animationText h2 {
+        padding-left: 0rem;
+        text-align: left !important;
     }
 }
 
